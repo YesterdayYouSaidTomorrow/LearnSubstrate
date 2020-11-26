@@ -8,7 +8,7 @@ pub trait LightTime {    //定义一个LightTime trait,包含lighttime方法
     fn lighttime(&self);   //引用self的值
 }
 
-impl LightTime for TrafficLight {   //利用impl关键字来定义结构体成员方法
+impl LightTime for TrafficLight {  
     fn lighttime(&self) {       
         match self {          //匹配self
             TrafficLight::Red=> {   
